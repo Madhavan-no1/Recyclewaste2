@@ -1,0 +1,18 @@
+# Open PowerShell and navigate to your project directory
+cd C:\Users\rathn\OneDrive\Documents\Tensorflow_new_recycle
+
+# Create dataset directory
+New-Item -Path "dataset" -ItemType Directory
+
+# Create train and validation directories
+New-Item -Path "dataset\train" -ItemType Directory
+New-Item -Path "dataset\validation" -ItemType Directory
+
+# Create subdirectories for each class
+New-Item -Path "dataset\train\plastic" -ItemType Directory
+New-Item -Path "dataset\train\metal" -ItemType Directory
+New-Item -Path "dataset\train\paper" -ItemType Directory
+
+New-Item -Path "dataset\validation\plastic" -ItemType Directory
+New-Item -Path "dataset\validation\metal" -ItemType Directory
+New-Item -Path "dataset\validation\paper" -ItemType Directory
